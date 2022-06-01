@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\loginstyle.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div class="box">
+  <form class ="item"action="/" method="post">
+ <input type="text" name="newid" placeholder="login id" >
+ 
+ <input type="text" name="password" placeholder="password">
+ <button type="submit" name="button">+</button>
+ </form> -->
+   <div class="box">
+       <div class="item">
+    <p class="tip" style="color: rgb(138, 130, 130);">Welcome to our ToDoList</p>
+    </div>
+    </div>
+    <div class="cont">
+        <div class="form sign-in">
+            <form action="/login" method="post">
+                <h2>Welcome back,</h2>
+                <label>
+                    <span>Email</span>
+                    <input type="email" name ="email" autocomplete="off" required />
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input type="password" name="password" autocomplete="off" required />
+                </label>
+                <br>
+                <br>
+                <br>
+                <input type="submit" class="submit" value="sign in">
+                <!-- <button type="button" class="submit">Sign In</button> -->
+            </form>
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                    <h2>New here?</h2>
+                    <p>Sign up and Organize your schedule!</p>
+                </div>
+                <div class="img__text m--in">
+                    <h2>One of us?</h2>
+                    <p>If you already has an account, just sign in. We've missed you!</p>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Sign Up</span>
+                    <span class="m--in">Sign In</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <form action="/register" method="post">
+                <h2>Time to feel like home,</h2>
+              
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="email" autocomplete="off" required />
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input type="password" name="password" autocomplete="off" required />
+                </label>
+                    <label>
+                        <span>Confirm Password</span>
+                        <input type="password" name="confirmpassword" autocomplete="off" required />
+                    </label>
+                    <br>
+                    <br>
+                    <br>
+
+                <input type="submit" class="submit" value="signup">
+                <!-- <button type="button" class="submit">Sign Up</button> -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="/loginjs.js"></script>
+
+</body>
+
+</html>
